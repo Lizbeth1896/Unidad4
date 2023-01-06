@@ -1,0 +1,38 @@
+<div class="componente-calculadora">
+    <div class="title-wrapper">
+        <h1 class="title">CALCULADORA</h1>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="text-input-wrapper">
+                    <label class="nombres" for="number"> Ingrese primer valor</label>
+                    <input type="number" class="form-control" placeholder="Escribe el valor 1" [(ngModel)]="valor1"/>
+                    <label class="nombres" for="number"> Ingrese segundo valor</label>
+                    <input type="number" class="form-control" placeholder="Escribe el valor 2" [(ngModel)]="valor2"/>
+                    <div class="text-center mt-2">
+                        <select class="operacion" name="operacion" [(ngModel)]="operacion">
+                            <option value="ninguna">Elija una operación</option>
+                            <option value="sumar">Sumar</option>
+                            <option value="restar">Restar</option>
+                            <option value="multiplicar">Multiplicar</option>
+                            <option value="dividir">Dividir</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="result-wrapper">
+                    <p appPaintelement class="result">Resultado:</p> 
+                    <span class="resultados" [ngSwitch]="operacion">
+                        <span *ngSwitchCase="'sumar'" [ngClass]="['sumar']">{{valor1+valor2}}</span>
+                        <span *ngSwitchCase="'restar'" [ngClass]="['restar']">{{valor1-valor2}}</span>
+                        <span *ngSwitchCase="'multiplicar'" [ngClass]="['multiplicar']">{{valor1*valor2}}</span>
+                        <span *ngSwitchCase="'dividir'" [ngClass]="['dividir']">{{valor1/valor2}}</span>
+                        <span *ngSwitchDefault [ngClass]="['ninguna']">(No eligió operación)</span>
+                      </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.navbar{
+    background-color: black;
+    position: relative;
+
+}
+.navbar::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    border-bottom: 0.3px solid #ccc6;
+    top: 50%;
+    bottom: 50%;
+    left: 8%;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 2.35px;
+    color: white;
+    padding: 16px;
+    display: block;
+    
+}
+.nav-link:hover{
+    border-bottom: 3px solid white;
+}
+
+@media(max-width:1160px){
+    .navbar::after{
+        display: none;
+        border-color: white;
+        width: 0%;
+    }
+}
+

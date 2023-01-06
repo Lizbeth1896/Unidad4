@@ -1,0 +1,67 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.bg--espacio{
+    background-image: url(../../../assets/crew/background-crew-desktop.jpg);
+   background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    /* background-color: blue; */
+    
+  }
+
+.text--title{
+    font-size:1.8rem;
+    font-weight:bold;
+    color:rgba(255, 255, 255, 0.856);
+    font-family:'Barlow Condensed', san-serif;
+    letter-spacing:0.3rem;
+
+}
+
+.text--title span{
+    color: rgba(162, 156, 156, 0.739);
+}
+
+.titlle-section{
+    /* margin:40px; */
+    padding:80px;
+}
+
+.text--title--sub{
+    color: rgba(162, 156, 156, 0.739);
+    font-family:'Barlow Condensed', san-serif;
+    letter-spacing:0.3rem;
+    font-size:1.6rem;
+}
+
+.text--title--main{
+    color: white;
+    font-family:'Barlow Condensed', san-serif;
+    letter-spacing:0.3rem;
+    font-size:1.8rem;
+    font-weight:700;
+
+}
+
+.text-content{
+    padding:50px;
+ 
+     
+}
+
+.text--parrafo{
+    text-align:justify;
+    font-family:'Barlow Condensed', san-serif;
+    font-size:1.6rem;
+    color:white
+
+}

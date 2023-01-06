@@ -1,0 +1,65 @@
+<div class="container">
+    <app-navbar></app-navbar>
+    <div class="modulo">
+        <div class="title-wrapper">
+            <span class="numberpag">03 </span>
+            <span class="titlepag"> Space launch 101</span>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-2">
+                <div class="item">
+                    <a (click)="seccion = 1" class="bolita">1</a>
+                    <a (click)="seccion = 2" class="bolita">2</a>
+                    <a (click)="seccion = 3" class="bolita">3</a>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="row" *ngIf="seccion == 1">
+                    <div class="col-md-6">
+                        <h2 class="title">The terminology...</h2>
+                        <h1 class="subtitle">Launch vehicle</h1>
+                        <p class="parrafo"> A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+                            payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+                            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+                            it's quite an awe-inspiring sight on the launch pad!</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-pag">
+                            <img src="./assets/tecnology/image-launch-vehicle-portrait.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" *ngIf="seccion == 2">
+                    <div class="col-md-6">
+                        <h2 class="title">The terminology...</h2>
+                        <h1 class="subtitle">Space capsule</h1>
+                        <p class="parrafo"> A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+                            capsule to reenter the Earth's atmosphere without wings. Our capsule is where
+                            you'll spend your time during the flight. It includes a space gym, cinema,
+                            and plenty of other activities to keep you entertained.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-pag">
+                            <img src="./assets/tecnology/image-space-capsule-portrait.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" *ngIf="seccion == 3">
+                    <div class="col-md-6">
+                        <h2 class="title">The terminology...</h2>
+                        <h1 class="subtitle">Spaceport</h1>
+                        <p class="parrafo">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
+                            by analogy to the seaport for ships or airport for aircraft. Based in the
+                            famous Cape Canaveral, our spaceport is ideally situated to take advantage
+                            of the Earth’s rotation for launch.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-pag">
+                            <img src="./assets/tecnology/image-spaceport-portrait.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
