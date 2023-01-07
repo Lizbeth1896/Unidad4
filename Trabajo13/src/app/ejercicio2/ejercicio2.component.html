@@ -1,0 +1,24 @@
+<div class="componente2">
+    <h1 class="title">CURRENCY PIPES</h1>
+    <div class="row align-items-center">
+        <div class="input col-auto">
+            <div class="col-auto">
+                <label for="valor" class="form-label" style="font-weight: bold;">Número: </label>
+            </div>
+            <div class="col-auto">
+                <input type="number" class="form-control" id="moneda" name="moneda" [(ngModel)]="moneda">
+            </div>
+        </div>
+        <div class="select">
+            <select class="form-select mb-3" [(ngModel)]="tipoMoneda">
+                <option value="0" selected>Seleccione el tipo de moneda</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+              </select>
+        </div>
+        <div class="result">
+            <span *ngIf="moneda && tipoMoneda != '0'" class="form-text" style="color: #181934;">
+                Resultado: {{moneda | currency: tipoMoneda}}</span>
+        </div>
+    </div>
+</div>

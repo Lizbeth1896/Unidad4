@@ -1,0 +1,24 @@
+.componente2{
+    /* max-width: 80%; */
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.componente2 .title{
+    margin-bottom: 20px;
+    color: #4674C5;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.componente2 .select{
+    margin-top: 20px;
+}
+
+.componente2 .result{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #181934;
+}

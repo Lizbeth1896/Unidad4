@@ -1,0 +1,22 @@
+<div class="componente3">
+    <h1 class="title">MY PIPE</h1>
+    <div class="row align-items-center">
+        <div class="input col-auto">
+            <div class="col-auto">
+                <label for="valor" class="form-label" style="font-weight: bold;">Fecha y Hora: </label>
+            </div>
+            <div class="col col-mb-8">
+                <div class="input-group">
+                    <input placeholder="Fecha en que se comentó" type="date" class="form-control" [(ngModel)]="fecha">
+                    <input placeholder="Hora en que se comentó" type="time" class="form-control"[(ngModel)]="hora">
+                </div>
+            </div>
+        </div>
+        <div class="result">
+            <p class="fechas">fecha anterior: {{ currDate | date: 'yyyy-MM-dd HH:mm:ss' }}</p>
+            <p class="fechas">fecha actual: {{this.fecha + ' ' + this.hora}}</p>
+            <span class="resultado">
+                Resultado: {{(this.fecha + ' ' + this.hora) | mypipe}}</span>
+        </div>
+    </div>
+</div>

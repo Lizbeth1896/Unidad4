@@ -1,0 +1,15 @@
+<div class="componente1">
+    <h1 class="title">USO DE PIPES</h1>
+    <div class="row align-items-center">
+        <div class="col-auto">
+            <label for="valor" class="form-label" style="font-weight: bold;">Valor: </label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" id="valor" name="valor" [(ngModel)]="resultado">
+        </div>
+        <div class="result">
+            <span class="form-text" style="text-align: center; font-size: 20px;">
+            Resultado: {{resultado | uppercase}}</span>
+        </div>
+    </div>
+</div>
