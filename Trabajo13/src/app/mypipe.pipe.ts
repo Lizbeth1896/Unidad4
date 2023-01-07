@@ -17,6 +17,9 @@ export class MypipePipe implements PipeTransform {
     let daysBetween = hoursBetween / 24;
     let monthsBetween = Math.floor(daysBetween / 30);
     let additionalDays = 0;
+    if(daysBetween > 9 && monthsBetween == 0) {
+      additionalDays = daysBetween;
+    }
     if(monthsBetween > 0) {
       additionalDays = daysBetween - (monthsBetween * 30);
     }
