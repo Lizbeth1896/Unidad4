@@ -1,0 +1,27 @@
+<form class="formulario" (ngSubmit)="onSubmit(contactForm.value)" #contactForm="ngForm">
+
+    <h1 class="title">Registro de personas</h1>
+    <app-form-register *ngIf="valores" [values]="valores"></app-form-register>
+    <div class="mb-3">
+        <label for="name" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="model.name" required #name="ngModel">
+    </div>
+    <div class="mb-3">
+        <label for="dni" class="form-label">DNI:</label>
+        <input type="text" class="form-control" id="dni" name="dni" [(ngModel)]="model.dni" required #dni="ngModel">
+    </div>
+    <div class="mb-4">
+        <label for="estado_civil" class="form-label">Estado Civil:</label>
+        <select name="estado_civil" id="estado_civil" class="form-select form-select" [(ngModel)]="model.estado_civil" #estado_civil="ngModel">
+            <option selected>Elija la opción</option>
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+        </select>
+    </div>
+    <div class="d-grid gap-2 col-4">
+        <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+    </div>
+</form>
+
+
+

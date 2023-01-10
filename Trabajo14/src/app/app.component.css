@@ -1,0 +1,24 @@
+.formulario{
+    max-width: 40%;
+    /* border: solid; */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 70px;
+    margin-left: 30vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8efca;
+}
+
+.formulario .title{
+    font-size: 40px;
+    color: #0886bc;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formulario .form-label{
+    font-weight: bold;
+    font-size: 18px;
+}
