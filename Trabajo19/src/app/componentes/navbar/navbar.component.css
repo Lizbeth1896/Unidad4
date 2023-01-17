@@ -1,0 +1,28 @@
+.navbar {
+    background: #343A40;
+    padding: 0.8rem 0;
+    box-shadow: 0 0 2rem var(#343A40);
+}
+
+.navbar  .navbar-brand {
+    font-size: 2rem;
+}
+
+.navbar  .navbar-brand .brand-left {
+    color: #1B98E8;
+}
+
+.navbar  .navbar-brand .brand-right {
+    color: #E8F1F2;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #E8F1F2;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link.active {
+    color: #1B98E8;
+}
