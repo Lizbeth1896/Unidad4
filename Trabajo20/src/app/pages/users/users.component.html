@@ -1,0 +1,8 @@
+<p class="main-title">{{ "users" | titlecase }}</p>
+<div class="container row">
+  <div class="col-md-4 product-container" *ngFor="let user of users">
+    <ul>
+        <li class="name">{{user.name}}</li>
+    </ul>
+  </div>
+</div>

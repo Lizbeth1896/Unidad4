@@ -1,0 +1,12 @@
+<p class="main-title">{{ "Categories" | titlecase }}</p>
+<div class="container row">
+  <div class="col-md-3 categories-container" *ngFor="let category of categories">
+    <div class="card text-bg-dark" style="width: 18rem; margin-top: 15px;">
+      <div class="card-body">
+        <h5 class="card-title">{{ category.name | uppercase}}</h5>
+        <p class="card-text">{{ category.typeImg}}</p>
+        <a [routerLink]="'/products/' + category.id" class="btn btn-primary">ver productos</a>
+      </div>
+    </div>
+  </div>
+</div>
