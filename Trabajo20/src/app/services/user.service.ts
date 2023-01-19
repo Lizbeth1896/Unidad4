@@ -13,7 +13,8 @@ export class UserService {
   ) { }
 
   getAllUsers() {
-    // return console.log(this.http.get(this.apiURI)
+    // return console.log(this.http.get(this.apiURI))
     return this.http.get(this.apiURI);
   }
+
 }

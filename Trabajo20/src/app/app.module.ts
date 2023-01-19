@@ -5,36 +5,29 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
-import { HomeComponent } from './pages/home/home.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { ProductsComponent } from './pages/products/products.component';
-import { ProductComponent } from './pages/product/product.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { HttpClientModule } from '@angular/common/http';
-import { CategoriesComponent } from './pages/categories/categories.component';
+import { HttpClientModule, HTTP_INTERCEPTORS  } from '@angular/common/http';
 import { httpInterceptorProviders } from './interceptors';
 import { UsersComponent } from './pages/users/users.component';
+import { LoginComponent } from './pages/login/login.component';
+import { PostComponent } from './pages/post/post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsComponent,
     NavbarComponent,
-    HomeComponent,
-    ContactComponent,
-    ProductComponent,
-    NotFoundComponent,
-    CategoriesComponent,
     UsersComponent,
+    LoginComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

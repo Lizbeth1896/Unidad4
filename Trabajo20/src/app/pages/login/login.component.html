@@ -1,0 +1,15 @@
+<div class="container">
+    <form class="formulario" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="mb-4">
+            <label for="email" class="form-label">Username:</label>
+            <input type="text" class="form-control" name="email" formControlName="email">
+        </div>
+        <div class="mb-4">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" class="form-control" name="password" formControlName="password">
+        </div>
+        <div class="d-grid gap-2 col-4">
+            <button type="submit" class="btn btn-primary btn-lg" [routerLink]="['/post']">Login</button>
+        </div>
+    </form>
+</div>

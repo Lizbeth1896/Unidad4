@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SessionsService } from 'src/app/services/sessions.service';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -10,15 +11,22 @@ export class UsersComponent {
   users: any = []
   
   constructor(
-    private userService : UserService
+    private userService : UserService,
   ){ }
 
-  ngOnInit(): void {
-    this.userService.getAllUsers()
-    .subscribe((data) => 
-    console.log(data))
-    // this.users = data)
-    // console.log(this.users)
+  onSubmit() {
+    this.userService.getAllUsers().subscribe((data: any) => {
+      if (data.token) {
+        sessionStorage.setItem("Token", data.token)
+      }
+      console.log(data);
+    })
   }
+
+  // logout(): void {
+  //   sessionStorage.removeItem('Token');
+  //   this..next(null);
+  //   this.router.navigate(['/login']);
+  // }
   
 }
